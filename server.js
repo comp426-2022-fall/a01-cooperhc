@@ -51,14 +51,9 @@ const server = http.createServer((req, res) => {
         res.end()
         return        
     })
-})
+}).listen(port)
 
-//console.log('Server listening on port $' + port);
-
-server.listen(port, () => {
-    console.log('Server running on port $' + port)
-})
-
+console.log('Server listening on port $' + port);
 
 
 
